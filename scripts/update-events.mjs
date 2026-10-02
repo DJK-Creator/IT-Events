@@ -26,13 +26,21 @@ function suburbOf(v) {
   return str(v.city) || "Sydney";
 }
 
+function priceOf(r) {
+  const pr = r.pricing;
+  if (pr == null) return pick(r, "price", "priceRange", "ticketPrice", "minPrice");
+  if (typeof pr !== "object") return String(pr);
+  if (pr.isFree === true || pr.free === true) return "free";
+  return pick(pr, "displayPrice", "display", "priceText", "minPrice", "min", "lowestPrice", "lowest", "price", "amount", "value", "from");
+}
+
 function clean(r) {
   const v = r.venue && typeof r.venue === "object" ? r.venue : {};
   const online = r.isOnline === true;
   const raw = pick(r, "startDate", "start_date", "date");
   const d = /^\d{4}-\d{2}-\d{2}/.test(raw) ? raw.slice(0, 10) : "";
-  const priceTxt = pick(r, "price", "priceRange", "ticketPrice", "minPrice", "priceText", "displayPrice", "lowestPrice", "minimumPrice");
-  const free = r.isFree === true || r.free === true || /^\s*free\s*$/i.test(priceTxt) || priceTxt === "0";
+  const priceTxt = priceOf(r);
+  const free = r.isFree === true || /free/i.test(priceTxt) || priceTxt === "0";
   const num = free ? 0 : parseFloat(priceTxt.replace(/[^0-9.]/g, ""));
   return {
     n: pick(r, "title", "name"),
@@ -58,11 +66,9 @@ async function scrape() {
     if (!res.ok) throw new Error(`Apify ${res.status}: ${(await res.text()).slice(0, 300)}`);
     const rows = await res.json();
     console.log(`${category}: ${rows.length} rows`);
-    if (rows[0]) {
-      console.log("Fields:", Object.keys(rows[0]).join(", "));
-      const p = rows.map(r => Object.entries(r).filter(([k]) => /price|cost|free|ticket/i.test(k)).map(([k, x]) => `${k}=${JSON.stringify(x)}`).join(" ")).filter(Boolean).slice(0, 5);
-      console.log("Price fields:", p.join(" | ") || "none found");
-    }
+    console.log("Pricing samples:", rows.slice(0, 6).map(r => JSON.stringify(r.pricing)).join(" | "));
+    console.log("Subcategories:", [...new Set(rows.map(r => str(r.subcategory)))].join(", "));
+    console.log("Formats:", [...new Set(rows.map(r => str(r.format)))].join(", "));
     out.push(...rows);
   }
   return out.map(clean);
