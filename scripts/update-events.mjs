@@ -26,30 +26,31 @@ function suburbOf(v) {
   return str(v.city) || "Sydney";
 }
 
+const FORMATS = [[/workshop|class|training/i, "Workshop"], [/seminar|talk/i, "Talk"], [/expo|tradeshow/i, "Expo"], [/network|meeting/i, "Networking"], [/conference/i, "Conference"]];
+function categoryOf(r) {
+  const f = str(r.format), hit = FORMATS.find(([re]) => re.test(f));
+  return hit ? hit[1] : (str(r.subcategory) || "Tech");
+}
+
 function priceOf(r) {
-  const pr = r.pricing;
-  if (pr == null) return pick(r, "price", "priceRange", "ticketPrice", "minPrice");
-  if (typeof pr !== "object") return String(pr);
-  if (pr.isFree === true || pr.free === true) return "free";
-  return pick(pr, "displayPrice", "display", "priceText", "minPrice", "min", "lowestPrice", "lowest", "price", "amount", "value", "from");
+  const pr = r.pricing && typeof r.pricing === "object" ? r.pricing : {};
+  if (pr.isFree === true) return 0;
+  const n = parseFloat(String(pr.minPrice ?? pr.priceDisplay ?? "").replace(/[^0-9.]/g, ""));
+  return Number.isFinite(n) ? n : null; // null = paid, price not provided by scraper
 }
 
 function clean(r) {
   const v = r.venue && typeof r.venue === "object" ? r.venue : {};
   const online = r.isOnline === true;
   const raw = pick(r, "startDate", "start_date", "date");
-  const d = /^\d{4}-\d{2}-\d{2}/.test(raw) ? raw.slice(0, 10) : "";
-  const priceTxt = priceOf(r);
-  const free = r.isFree === true || /free/i.test(priceTxt) || priceTxt === "0";
-  const num = free ? 0 : parseFloat(priceTxt.replace(/[^0-9.]/g, ""));
   return {
     n: pick(r, "title", "name"),
-    d,
+    d: /^\d{4}-\d{2}-\d{2}/.test(raw) ? raw.slice(0, 10) : "",
     t: time12(str(r.startTime)),
     s: online ? "Online" : suburbOf(v),
     v: online ? "Online event" : (str(v.name) || "See event page"),
-    c: "Tech",
-    p: Number.isFinite(num) ? num : 0,
+    c: categoryOf(r),
+    p: priceOf(r),
     m: pick(r, "summary", "description", "shortDescription").replace(/\s+/g, " ").slice(0, 280) || "Open the event page for full details.",
     u: pick(r, "url", "eventUrl", "link"),
   };
@@ -65,10 +66,7 @@ async function scrape() {
     });
     if (!res.ok) throw new Error(`Apify ${res.status}: ${(await res.text()).slice(0, 300)}`);
     const rows = await res.json();
-    console.log(`${category}: ${rows.length} rows`);
-    console.log("Pricing samples:", rows.slice(0, 6).map(r => JSON.stringify(r.pricing)).join(" | "));
-    console.log("Subcategories:", [...new Set(rows.map(r => str(r.subcategory)))].join(", "));
-    console.log("Formats:", [...new Set(rows.map(r => str(r.format)))].join(", "));
+    console.log(`${category}: ${rows.length} rows, ${rows.filter(r => r.pricing && r.pricing.isFree === true).length} free`);
     out.push(...rows);
   }
   return out.map(clean);
