@@ -128,21 +128,22 @@ function render(){
 var q=$("q").value.toLowerCase().trim(),sub=$("sub").value,sort=$("sort").value,max=+$("max").value;
 $("maxOut").textContent=max>=500?"Any":"≤ $"+max;
 var r=EVENTS.filter(function(e){
-if(st.p==="free"&&e.p>0)return false;
+if(st.p==="free"&&e.p!==0)return false;
 if(st.p==="paid"&&e.p===0)return false;
 if(sub&&e.s!==sub)return false;
 if(st.cats.length&&st.cats.indexOf(e.c)<0)return false;
-if(max<500&&e.p>max)return false;
+if(max<500&&e.p!=null&&e.p>max)return false;
 if(st.saved&&!fav[e.id])return false;
 if(q&&(e.n+" "+e.v+" "+e.c+" "+e.s).toLowerCase().indexOf(q)<0)return false;
 return true});
 r.sort(function(a,b){
-if(sort==="priceAsc")return a.p-b.p||a.d.localeCompare(b.d);
-if(sort==="priceDesc")return b.p-a.p||a.d.localeCompare(b.d);
+var pa=a.p==null?99999:a.p,pb=b.p==null?99999:b.p;
+if(sort==="priceAsc")return pa-pb||a.d.localeCompare(b.d);
+if(sort==="priceDesc")return pb-pa||a.d.localeCompare(b.d);
 if(sort==="suburb")return a.s.localeCompare(b.s)||a.d.localeCompare(b.d);
 return a.d.localeCompare(b.d)});
 var u={};r.forEach(function(e){u[e.s]=1});
-$("sTotal").textContent=r.length;$("sFree").textContent=r.filter(function(e){return!e.p}).length;$("sSub").textContent=Object.keys(u).length;
+$("sTotal").textContent=r.length;$("sFree").textContent=r.filter(function(e){return e.p===0}).length;$("sSub").textContent=Object.keys(u).length;
 $("count").textContent=r.length+(r.length===1?" RESULT":" RESULTS");
 $("list").className=st.grid?"grid":"";
 $("list").innerHTML=r.length?r.map(function(e){
@@ -150,9 +151,9 @@ var dt=e.d.split("-"),on=fav[e.id];
 var op=st.open[e.id],w=e.d.split("-");
 return '<li class="card'+(op?' open':'')+'"><button class="head" data-id="'+e.id+'" aria-expanded="'+(!!op)+'" aria-controls="m'+e.id+'"><span class="date" style="display:block"><b>'+parseInt(dt[2],10)+'</b><span>'+MON[parseInt(dt[1],10)-1]+'</span></span>'+
 '<span style="display:block"><h2>'+esc(e.n)+'</h2><span class="info" style="display:block">'+esc(e.t)+' · '+esc(e.v)+'<br>'+esc(e.s)+'</span>'+
-'<span class="tags"><span class="tag '+(e.p?'paid':'free')+'">'+(e.p?'$'+e.p:'FREE')+'</span><span class="tag cat">'+esc(e.c)+'</span><span class="hint">Details</span></span></span></button>'+
+'<span class="tags"><span class="tag '+(e.p===0?'free':'paid')+'">'+(e.p===0?'FREE':e.p==null?'PAID':'$'+e.p)+'</span><span class="tag cat">'+esc(e.c)+'</span><span class="hint">Details</span></span></span></button>'+
 '<button class="star" data-id="'+e.id+'" aria-pressed="'+(!!on)+'" aria-label="Save '+esc(e.n)+'">'+(on?'★':'☆')+'</button>'+
-'<div class="more" id="m'+e.id+'"><p>'+esc(e.m)+'</p><p class="info mono">'+esc(e.t)+' · '+esc(e.v)+', '+esc(e.s)+'</p><a class="reg" href="'+e.u+'" target="_blank" rel="noopener noreferrer">Register · '+(e.p?'$'+e.p:'Free')+'</a></div></li>'}).join("")
+'<div class="more" id="m'+e.id+'"><p>'+esc(e.m)+'</p><p class="info mono">'+esc(e.t)+' · '+esc(e.v)+', '+esc(e.s)+'</p><a class="reg" href="'+e.u+'" target="_blank" rel="noopener noreferrer">Register · '+(e.p===0?'Free':e.p==null?'See price':'$'+e.p)+'</a></div></li>'}).join("")
 :'<li class="empty">No events match. Widen the price, pick another suburb or reset the filters.</li>'}
 $("list").addEventListener("click",function(ev){var h=ev.target.closest(".head");if(h){var k=h.dataset.id;st.open[k]=!st.open[k];render();var f=document.querySelector('.head[data-id="'+k+'"]');if(f)f.focus();return}var b=ev.target.closest(".star");if(!b)return;var id=b.dataset.id;if(fav[id])delete fav[id];else fav[id]=1;persist();render()});
 document.querySelectorAll(".seg button").forEach(function(b){b.onclick=function(){st.p=b.dataset.p;document.querySelectorAll(".seg button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});render()}});
