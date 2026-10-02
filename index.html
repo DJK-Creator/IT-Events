@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IT Events Radar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#05070d;--glass:rgba(18,26,44,.62);--ink:#e6f1ff;--mute:#7f93b2;--line:rgba(120,160,255,.18);--cy:#4de1ff;--vi:#8b7bff;--free:#3dffb0;--paid:#ffb454;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:400 16px/1.5 "Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+background-image:radial-gradient(60rem 30rem at 85% -10%,rgba(139,123,255,.22),transparent 60%),radial-gradient(50rem 28rem at -10% 10%,rgba(77,225,255,.16),transparent 60%),linear-gradient(rgba(120,160,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(120,160,255,.05) 1px,transparent 1px);background-size:auto,auto,36px 36px,36px 36px;background-attachment:fixed}
+.wrap{max-width:1040px;margin:0 auto;padding:22px 16px 56px}
+.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
+h1{font:700 clamp(2rem,6.5vw,3.6rem)/1 "Space Grotesk",sans-serif;margin:10px 0 8px;letter-spacing:-.03em;background:linear-gradient(95deg,#fff 20%,var(--cy) 60%,var(--vi));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mute);margin:0 0 20px;max-width:52ch}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.stat{border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(10px);border-radius:14px;padding:12px 14px}
+.stat b{display:block;font:600 1.7rem/1.1 "JetBrains Mono",monospace;color:var(--cy)}
+.stat span{font-size:.8rem;color:var(--mute)}
+.panel{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(5,7,13,.82);backdrop-filter:blur(14px);padding:12px;border:1px solid var(--line);border-radius:16px;display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.full{grid-column:1/-1}
+input[type=search],select{width:100%;min-height:46px;padding:0 14px;border:1px solid var(--line);border-radius:12px;background:rgba(10,16,30,.8);color:var(--ink);font:inherit}
+input[type=search]::placeholder{color:var(--mute)}
+:focus-visible{outline:2px solid var(--cy);outline-offset:2px}
+input[type=search]:focus{border-color:var(--cy);box-shadow:0 0 0 3px rgba(77,225,255,.18)}
+.seg{display:flex;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:rgba(10,16,30,.8)}
+.seg button{flex:1;min-height:46px;border:0;background:none;color:var(--mute);font:600 .95rem inherit;font-family:inherit;cursor:pointer}
+.seg button[aria-pressed="true"]{background:linear-gradient(135deg,rgba(77,225,255,.25),rgba(139,123,255,.3));color:#fff;box-shadow:inset 0 0 0 1px var(--cy)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.chip{flex:none;min-height:38px;padding:0 14px;border-radius:99px;border:1px solid var(--line);background:none;color:var(--mute);font:500 .9rem inherit;font-family:inherit;cursor:pointer}
+.chip[aria-pressed="true"]{color:#04101a;background:var(--cy);border-color:var(--cy)}
+.range{display:flex;align-items:center;gap:12px;color:var(--mute);font-size:.9rem}
+.range input{flex:1;accent-color:var(--cy);min-height:30px}
+.range output{min-width:5.5rem;text-align:right;color:var(--cy)}
+.meta{display:flex;justify-content:space-between;align-items:center;margin:18px 0 12px;color:var(--mute);font-size:.9rem}
+.tools{display:flex;gap:6px;align-items:center}
+.ico{min-height:38px;min-width:38px;border:1px solid var(--line);border-radius:10px;background:none;color:var(--mute);cursor:pointer;font:inherit}
+.ico[aria-pressed="true"]{color:var(--cy);border-color:var(--cy)}
+.link{background:none;border:0;color:var(--cy);font:inherit;cursor:pointer;padding:8px}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+ul.grid{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+li.card{position:relative;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(10px);border-radius:16px;display:block;transition:border-color .2s,box-shadow .2s,transform .2s}
+li.card:hover{border-color:rgba(77,225,255,.6);box-shadow:0 0 28px rgba(77,225,255,.14);transform:translateY(-2px)}
+.head{display:grid;grid-template-columns:62px 1fr;gap:14px;width:100%;padding:16px;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer;border-radius:16px}
+.hint{font:600 .78rem "JetBrains Mono",monospace;color:var(--cy);padding:3px 0}
+.hint::after{content:" ▾"}.head[aria-expanded="true"] .hint::after{content:" ▴"}
+.more{display:none;padding:0 16px 18px 92px}
+.card.open .more{display:block}
+.card.open{border-color:rgba(77,225,255,.5)}
+.more p{margin:0 0 12px;max-width:62ch}
+.reg{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:12px;background:linear-gradient(135deg,var(--cy),var(--vi));color:#04101a;font-weight:700;text-decoration:none}
+.reg:hover{box-shadow:0 0 24px rgba(77,225,255,.4)}
+@media(max-width:520px){.more{padding-left:16px}}
+ul.grid .more{padding-left:16px}
+.date{text-align:center;border-right:1px solid var(--line);padding-right:12px}
+.date b{display:block;font:600 1.8rem/1 "JetBrains Mono",monospace;color:#fff}
+.date span{font:.78rem "JetBrains Mono",monospace;color:var(--vi)}
+h2{font:700 1.1rem/1.25 "Space Grotesk",sans-serif;margin:0 28px 4px 0}
+.info{color:var(--mute);font-size:.9rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.tag{font:600 .78rem "JetBrains Mono",monospace;padding:3px 10px;border-radius:99px;border:1px solid}
+.free{color:var(--free);border-color:rgba(61,255,176,.45);background:rgba(61,255,176,.08)}
+.paid{color:var(--paid);border-color:rgba(255,180,84,.45);background:rgba(255,180,84,.08)}
+.cat{color:var(--mute);border-color:var(--line)}
+.star{position:absolute;top:8px;right:8px;width:40px;height:40px;border:0;background:none;color:var(--mute);font-size:1.3rem;cursor:pointer;border-radius:10px}
+.star[aria-pressed="true"]{color:var(--paid);text-shadow:0 0 12px var(--paid)}
+.empty{text-align:center;padding:44px 16px;color:var(--mute);border:1px dashed var(--line);border-radius:16px}
+.note{margin-top:28px;font-size:.8rem;color:var(--mute)}
+@media(min-width:760px){.panel{grid-template-columns:2fr 1fr 1fr}.panel .p1{grid-column:span 1}.stat b{font-size:2.1rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="mono" style="color:var(--cy);font-size:.85rem" aria-hidden="true">● LIVE FEED</div>
+<h1>IT Events Radar</h1>
+<p class="sub">Scan meetups, conferences and workshops. Narrow by price, suburb and topic, then save the ones you want.</p>
+
+<div class="stats">
+<div class="stat"><b id="sTotal">0</b><span>Events shown</span></div>
+<div class="stat"><b id="sFree">0</b><span>Free</span></div>
+<div class="stat"><b id="sSub">0</b><span>Suburbs</span></div>
+</div>
+
+<div class="panel" role="search">
+<input class="full" id="q" type="search" placeholder="Search events, topics, venues  ( / )" aria-label="Search events">
+<div class="seg full" role="group" aria-label="Price">
+<button data-p="all" aria-pressed="true">All</button><button data-p="free" aria-pressed="false">Free</button><button data-p="paid" aria-pressed="false">Paid</button>
+</div>
+<select id="sub" aria-label="Suburb"><option value="">All suburbs</option></select>
+<select id="sort" aria-label="Sort by">
+<option value="date">Soonest first</option><option value="priceAsc">Price: low to high</option><option value="priceDesc">Price: high to low</option><option value="suburb">Suburb A–Z</option>
+</select>
+<div class="chips full" id="chips" role="group" aria-label="Topics"></div>
+<div class="range full"><span>Max price</span><input id="max" type="range" min="0" max="500" step="10" value="500" aria-label="Maximum price"><output id="maxOut" class="mono">Any</output></div>
+</div>
+
+<div class="meta">
+<span id="count" class="mono" aria-live="polite"></span>
+<div class="tools">
+<button class="ico" id="saved" aria-pressed="false" title="Show saved only" aria-label="Show saved only">★</button>
+<button class="ico" id="view" aria-pressed="false" title="Toggle grid view" aria-label="Toggle grid view">▦</button>
+<button class="link" id="clear">Reset</button>
+</div>
+</div>
+<ul id="list"></ul>
+<p class="note">Listings update automatically. Always check the organiser page for the latest details.</p>
+</div>
+
+<script>
+var EVENTS=[];
+var subs=[],cats=[];
+function setup(list){
+var t=new Date().toISOString().slice(0,10);
+EVENTS=list.filter(function(e){return e.d>=t});
+EVENTS.forEach(function(e,i){e.id=i;if(subs.indexOf(e.s)<0)subs.push(e.s);if(cats.indexOf(e.c)<0)cats.push(e.c)});
+subs.sort();cats.sort();
+subs.forEach(function(s){var o=document.createElement("option");o.value=o.textContent=s;$("sub").appendChild(o)});
+cats.forEach(function(c){var b=document.createElement("button");b.className="chip";b.textContent=c;b.setAttribute("aria-pressed","false");
+b.onclick=function(){var k=st.cats.indexOf(c);if(k<0)st.cats.push(c);else st.cats.splice(k,1);b.setAttribute("aria-pressed",k<0);render()};$("chips").appendChild(b)});
+}
+var MON=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+function esc(x){return String(x).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function render(){
+var q=$("q").value.toLowerCase().trim(),sub=$("sub").value,sort=$("sort").value,max=+$("max").value;
+$("maxOut").textContent=max>=500?"Any":"≤ $"+max;
+var r=EVENTS.filter(function(e){
+if(st.p==="free"&&e.p>0)return false;
+if(st.p==="paid"&&e.p===0)return false;
+if(sub&&e.s!==sub)return false;
+if(st.cats.length&&st.cats.indexOf(e.c)<0)return false;
+if(max<500&&e.p>max)return false;
+if(st.saved&&!fav[e.id])return false;
+if(q&&(e.n+" "+e.v+" "+e.c+" "+e.s).toLowerCase().indexOf(q)<0)return false;
+return true});
+r.sort(function(a,b){
+if(sort==="priceAsc")return a.p-b.p||a.d.localeCompare(b.d);
+if(sort==="priceDesc")return b.p-a.p||a.d.localeCompare(b.d);
+if(sort==="suburb")return a.s.localeCompare(b.s)||a.d.localeCompare(b.d);
+return a.d.localeCompare(b.d)});
+var u={};r.forEach(function(e){u[e.s]=1});
+$("sTotal").textContent=r.length;$("sFree").textContent=r.filter(function(e){return!e.p}).length;$("sSub").textContent=Object.keys(u).length;
+$("count").textContent=r.length+(r.length===1?" RESULT":" RESULTS");
+$("list").className=st.grid?"grid":"";
+$("list").innerHTML=r.length?r.map(function(e){
+var dt=e.d.split("-"),on=fav[e.id];
+var op=st.open[e.id],w=e.d.split("-");
+return '<li class="card'+(op?' open':'')+'"><button class="head" data-id="'+e.id+'" aria-expanded="'+(!!op)+'" aria-controls="m'+e.id+'"><span class="date" style="display:block"><b>'+parseInt(dt[2],10)+'</b><span>'+MON[parseInt(dt[1],10)-1]+'</span></span>'+
+'<span style="display:block"><h2>'+esc(e.n)+'</h2><span class="info" style="display:block">'+esc(e.t)+' · '+esc(e.v)+'<br>'+esc(e.s)+'</span>'+
+'<span class="tags"><span class="tag '+(e.p?'paid':'free')+'">'+(e.p?'$'+e.p:'FREE')+'</span><span class="tag cat">'+esc(e.c)+'</span><span class="hint">Details</span></span></span></button>'+
+'<button class="star" data-id="'+e.id+'" aria-pressed="'+(!!on)+'" aria-label="Save '+esc(e.n)+'">'+(on?'★':'☆')+'</button>'+
+'<div class="more" id="m'+e.id+'"><p>'+esc(e.m)+'</p><p class="info mono">'+esc(e.t)+' · '+esc(e.v)+', '+esc(e.s)+'</p><a class="reg" href="'+e.u+'" target="_blank" rel="noopener noreferrer">Register · '+(e.p?'$'+e.p:'Free')+'</a></div></li>'}).join("")
+:'<li class="empty">No events match. Widen the price, pick another suburb or reset the filters.</li>'}
+$("list").addEventListener("click",function(ev){var h=ev.target.closest(".head");if(h){var k=h.dataset.id;st.open[k]=!st.open[k];render();var f=document.querySelector('.head[data-id="'+k+'"]');if(f)f.focus();return}var b=ev.target.closest(".star");if(!b)return;var id=b.dataset.id;if(fav[id])delete fav[id];else fav[id]=1;persist();render()});
+document.querySelectorAll(".seg button").forEach(function(b){b.onclick=function(){st.p=b.dataset.p;document.querySelectorAll(".seg button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});render()}});
+["q","sub","sort","max"].forEach(function(i){$(i).addEventListener("input",render)});
+$("saved").onclick=function(){st.saved=!st.saved;this.setAttribute("aria-pressed",st.saved);render()};
+$("view").onclick=function(){st.grid=!st.grid;this.setAttribute("aria-pressed",st.grid);render()};
+$("clear").onclick=function(){$("q").value="";$("sub").value="";$("sort").value="date";$("max").value=500;st.p="all";st.cats=[];st.saved=false;
+$("saved").setAttribute("aria-pressed","false");
+document.querySelectorAll(".seg button").forEach(function(x){x.setAttribute("aria-pressed",x.dataset.p==="all")});
+document.querySelectorAll(".chip").forEach(function(x){x.setAttribute("aria-pressed","false")});render()};
+document.addEventListener("keydown",function(e){if(e.key==="/"&&document.activeElement!==$("q")){e.preventDefault();$("q").focus()}});
+fetch("events.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(l){setup(l);render()}).catch(function(){$("list").innerHTML='<li class="empty">Could not load events. Please try again shortly.</li>'});
+</script>
+</body>
+</html>

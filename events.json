@@ -1,0 +1,145 @@
+[
+ {
+  "n": "Cloud Native Meetup",
+  "d": "2026-10-08",
+  "t": "6:00 pm",
+  "s": "Parramatta",
+  "v": "Innovation Hub",
+  "c": "Cloud",
+  "p": 0,
+  "m": "Monthly talk and demos on Kubernetes, containers and cloud-native tooling. Beginners welcome. Pizza provided.",
+  "u": "https://example.com/register/0"
+ },
+ {
+  "n": "Cybersecurity Essentials Workshop",
+  "d": "2026-10-10",
+  "t": "9:30 am",
+  "s": "Chatswood",
+  "v": "Skills Centre",
+  "c": "Security",
+  "p": 149,
+  "m": "A practical one-day workshop on phishing, passwords, patching and incident response for small business IT teams.",
+  "u": "https://example.com/register/1"
+ },
+ {
+  "n": "Women in Tech Networking Night",
+  "d": "2026-10-13",
+  "t": "6:30 pm",
+  "s": "Surry Hills",
+  "v": "The Loft",
+  "c": "Community",
+  "p": 0,
+  "m": "A relaxed evening to meet other women working in IT, with short lightning talks and plenty of time to connect.",
+  "u": "https://example.com/register/2"
+ },
+ {
+  "n": "DevOps Day Sydney",
+  "d": "2026-10-17",
+  "t": "8:30 am",
+  "s": "Darling Harbour",
+  "v": "Convention Centre",
+  "c": "DevOps",
+  "p": 395,
+  "m": "A full-day conference on CI/CD, infrastructure as code and platform engineering, with speakers from local companies.",
+  "u": "https://example.com/register/3"
+ },
+ {
+  "n": "Intro to Python for Beginners",
+  "d": "2026-10-20",
+  "t": "6:00 pm",
+  "s": "Carlingford",
+  "v": "Community Library",
+  "c": "Coding",
+  "p": 0,
+  "m": "Free, hands-on introduction to Python. No experience needed. Bring a laptop and we will set everything up together.",
+  "u": "https://example.com/register/4"
+ },
+ {
+  "n": "AI in Business Summit",
+  "d": "2026-10-22",
+  "t": "9:00 am",
+  "s": "Sydney CBD",
+  "v": "Grand Ballroom",
+  "c": "AI",
+  "p": 450,
+  "m": "Business leaders and IT teams share real examples of putting AI to work, with panels and vendor demos.",
+  "u": "https://example.com/register/5"
+ },
+ {
+  "n": "Microsoft 365 Admin User Group",
+  "d": "2026-10-27",
+  "t": "5:30 pm",
+  "s": "North Sydney",
+  "v": "Co-work Space",
+  "c": "Cloud",
+  "p": 0,
+  "m": "Community meetup for Microsoft 365 and Entra admins covering licensing, security and automation tips.",
+  "u": "https://example.com/register/6"
+ },
+ {
+  "n": "Ethical Hacking Bootcamp",
+  "d": "2026-10-31",
+  "t": "9:00 am",
+  "s": "Ultimo",
+  "v": "Tech Campus",
+  "c": "Security",
+  "p": 280,
+  "m": "A hands-on, full-day course in ethical hacking and penetration testing basics, run in a safe lab environment.",
+  "u": "https://example.com/register/7"
+ },
+ {
+  "n": "Open Source Hack Night",
+  "d": "2026-11-04",
+  "t": "6:00 pm",
+  "s": "Newtown",
+  "v": "Maker Space",
+  "c": "Coding",
+  "p": 0,
+  "m": "Bring a project or pick one from the board and contribute to open source alongside other developers.",
+  "u": "https://example.com/register/8"
+ },
+ {
+  "n": "Data & Analytics Conference",
+  "d": "2026-11-10",
+  "t": "8:00 am",
+  "s": "Macquarie Park",
+  "v": "Business Park Theatre",
+  "c": "Data",
+  "p": 320,
+  "m": "Two tracks on data engineering, analytics and BI, with case studies from finance, retail and health.",
+  "u": "https://example.com/register/9"
+ },
+ {
+  "n": "IT Managers Roundtable",
+  "d": "2026-11-12",
+  "t": "7:30 am",
+  "s": "Parramatta",
+  "v": "Rooftop Lounge",
+  "c": "Management",
+  "p": 35,
+  "m": "Small-group discussion for IT managers on budgets, vendors, hiring and managing risk. Light breakfast included.",
+  "u": "https://example.com/register/10"
+ },
+ {
+  "n": "Network Engineers Meetup",
+  "d": "2026-11-18",
+  "t": "6:00 pm",
+  "s": "Chatswood",
+  "v": "Skills Centre",
+  "c": "Networking",
+  "p": 0,
+  "m": "Talks and troubleshooting for network engineers on routing, SD-WAN and Wi-Fi design.",
+  "u": "https://example.com/register/11"
+ },
+ {
+  "n": "Generative AI Hands-on Lab",
+  "d": "2026-11-21",
+  "t": "10:00 am",
+  "s": "Ultimo",
+  "v": "Tech Campus",
+  "c": "AI",
+  "p": 90,
+  "m": "Build and test a generative AI app in one morning. Laptop required, accounts are set up for you.",
+  "u": "https://example.com/register/12"
+ }
+]
