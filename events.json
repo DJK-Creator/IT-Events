@@ -1,16 +1,5 @@
 [
  {
-  "n": "Shure Advanced Wireless Training Sydney",
-  "d": "2026-10-07",
-  "t": "9:00 am",
-  "s": "Mascot",
-  "v": "Jands Sydney",
-  "c": "Workshop",
-  "p": null,
-  "m": "Learn how to successfully setup, deploy and operate multi-channel wireless microphone and in-ear systems.",
-  "u": "https://www.eventbrite.com.au/e/shure-advanced-wireless-training-sydney-tickets-1991963150405"
- },
- {
   "n": "Smart City Expo Sydney, Aus",
   "d": "2026-10-13",
   "t": "10:00 am",
@@ -44,15 +33,26 @@
   "u": "https://www.eventbrite.com/e/master-r-for-data-science-1-day-workshop-in-sydney-tickets-1999256377644"
  },
  {
-  "n": "Can Artists Escape Big Tech in the Age of AI?",
-  "d": "2026-10-19",
-  "t": "5:30 pm",
-  "s": "Kensington",
-  "v": "Michael Crouch Innovation Centre",
+  "n": "Future Proof Lab - Artificial Intelligence and Robotics in Modern Business",
+  "d": "2026-10-15",
+  "t": "6:00 pm",
+  "s": "Surry Hills",
+  "v": "Torrens University Australia, Sydney, Surry Hills campus",
   "c": "Talk",
   "p": null,
-  "m": "Join us at an intersection of tech, culture, and creativity. Food and drinks provided.",
-  "u": "https://www.eventbrite.com.au/e/can-artists-escape-big-tech-in-the-age-of-ai-tickets-1998860162554"
+  "m": "A meetup for those with their finger on the pulse of how technology will be changing business. This event is for everyone.",
+  "u": "https://www.eventbrite.com.au/e/future-proof-lab-artificial-intelligence-and-robotics-in-modern-business-tickets-1550094015929"
+ },
+ {
+  "n": "Testing UAT setup",
+  "d": "2026-10-17",
+  "t": "10:00 am",
+  "s": "Kensington",
+  "v": "Anita B. Lawrence Centre (H13)",
+  "c": "Workshop",
+  "p": null,
+  "m": "Get ready to dive into hands-on testing and make sure the UAT setup is solid and smooth!",
+  "u": "https://www.eventbrite.com/e/testing-uat-setup-tickets-1999983580728"
  },
  {
   "n": "Photonics Design, Measurement & Testing Workshop with Keysight",
