@@ -1,27 +1,5 @@
 [
  {
-  "n": "Master R for Data Science: 1-Day Workshop in Sydney",
-  "d": "2026-10-14",
-  "t": "9:00 am",
-  "s": "Sydney",
-  "v": "Regus - Sydney, Balmain",
-  "c": "Workshop",
-  "p": null,
-  "m": "Master practical R workflows, data analytics, visualization, and automation techniques in this intensive 1-Day data science workshop.",
-  "u": "https://www.eventbrite.com/e/master-r-for-data-science-1-day-workshop-in-sydney-tickets-1999256377644"
- },
- {
-  "n": "Future Proof Lab - Artificial Intelligence and Robotics in Modern Business",
-  "d": "2026-10-15",
-  "t": "6:00 pm",
-  "s": "Surry Hills",
-  "v": "Torrens University Australia, Sydney, Surry Hills campus",
-  "c": "Talk",
-  "p": null,
-  "m": "A meetup for those with their finger on the pulse of how technology will be changing business. This event is for everyone.",
-  "u": "https://www.eventbrite.com.au/e/future-proof-lab-artificial-intelligence-and-robotics-in-modern-business-tickets-1550094015929"
- },
- {
   "n": "Testing UAT setup",
   "d": "2026-10-17",
   "t": "10:00 am",
@@ -99,17 +77,6 @@
   "u": "https://www.eventbrite.com/e/future-world-expo-sydney-tickets-1124239644039"
  },
  {
-  "n": "Decrypting DeSci (Decentralized Science) | Sydney",
-  "d": "2026-11-03",
-  "t": "4:00 pm",
-  "s": "Sydney",
-  "v": "Sydney",
-  "c": "Workshop",
-  "p": null,
-  "m": "2-hour live online training on how blockchain & Web3 are transforming research with DeSci—open, transparent & collaborative.",
-  "u": "https://www.eventbrite.com.au/e/decrypting-desci-decentralized-science-sydney-tickets-1835673120719"
- },
- {
   "n": "Quantum Innovators Network: Building the Future of Drug Discovery",
   "d": "2026-11-05",
   "t": "5:00 pm",
@@ -132,15 +99,15 @@
   "u": "https://www.eventbrite.com.au/e/leading-instructional-excellence-in-science-north-sydney-tickets-1999078097403"
  },
  {
-  "n": "Unravelling NFTs | Sydney",
-  "d": "2026-11-10",
-  "t": "4:00 pm",
+  "n": "Master R for Data Science: 1-Day Workshop in Sydney",
+  "d": "2026-11-11",
+  "t": "9:00 am",
   "s": "Sydney",
-  "v": "Sydney",
+  "v": "Regus - Sydney, Balmain",
   "c": "Workshop",
   "p": null,
-  "m": "2-hours live online training to help you understand the NFTs.",
-  "u": "https://www.eventbrite.com.au/e/unravelling-nfts-sydney-tickets-1744367001659"
+  "m": "Master practical R workflows, data analytics, visualization, and automation techniques in this intensive 1-Day data science workshop.",
+  "u": "https://www.eventbrite.com/e/master-r-for-data-science-1-day-workshop-in-sydney-tickets-1999256390683"
  },
  {
   "n": "Startup Tech & AI Networking in Sydney",
@@ -152,6 +119,17 @@
   "p": null,
   "m": "Dive into tech with other professionals! Network and build strong relationships with investors, tech experts, and entrepreneurs in Sydney.",
   "u": "https://www.eventbrite.com/e/startup-tech-ai-networking-in-sydney-tickets-1999814662489"
+ },
+ {
+  "n": "AI & Tech Networking Event in Sydney by Ascent Valley",
+  "d": "2026-11-13",
+  "t": "6:00 pm",
+  "s": "The Rocks",
+  "v": "Harbour View Hotel, The Rocks",
+  "c": "Networking",
+  "p": null,
+  "m": "Dive into tech with other professionals! Network and build strong relationships with investors, tech experts, and entrepreneurs in Sydney",
+  "u": "https://www.eventbrite.com/e/ai-tech-networking-event-in-sydney-by-ascent-valley-tickets-1999814664495"
  },
  {
   "n": "TechHaus Sydney · Nov 2026: Where Leading AI & Tech Minds Come Together",
