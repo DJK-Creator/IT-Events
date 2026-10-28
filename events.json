@@ -1,16 +1,5 @@
 [
  {
-  "n": "Sydney Monthly Social Tech Meetup",
-  "d": "2026-10-29",
-  "t": "5:30 pm",
-  "s": "Newtown",
-  "v": "Mountain Goat Newtown",
-  "c": "Networking",
-  "p": null,
-  "m": "For all techies including students, those in the industry as a developer/engineer/data scientist/AI/anything else, and tech hobbyist.",
-  "u": "https://www.eventbrite.com.au/e/sydney-monthly-social-tech-meetup-tickets-1996322378975"
- },
- {
   "n": "Quantum Innovators Network: Building the Future of Drug Discovery",
   "d": "2026-11-05",
   "t": "5:00 pm",
@@ -110,15 +99,26 @@
   "u": "https://www.eventbrite.com.au/e/techhaus-sydney-nov-2026-where-leading-ai-tech-minds-come-together-tickets-1999927112831"
  },
  {
-  "n": "Smart City Expo Sydney, Aus",
-  "d": "2027-04-13",
+  "n": "Semiconductors and AI: Edge AI",
+  "d": "2026-11-26",
+  "t": "9:30 am",
+  "s": "Eveleigh",
+  "v": "Cicada Innovations",
+  "c": "Talk",
+  "p": null,
+  "m": "Join us for this morning session looking at semiconductors and Edge AI",
+  "u": "https://www.eventbrite.com.au/e/semiconductors-and-ai-edge-ai-tickets-1992538619649"
+ },
+ {
+  "n": "Live IP Essentials: From Networking to SMPTE ST 2110 Sydney",
+  "d": "2026-12-03",
   "t": "10:00 am",
   "s": "Sydney",
-  "v": "Sydney",
-  "c": "Expo",
+  "v": "400 George St",
+  "c": "Workshop",
   "p": null,
-  "m": "Architect the Cognitive City! Join Smart City Expo Sydney 2026 to explore AI, Cyber & Digital Twins with global leaders. #SmartCity #Sydney",
-  "u": "https://www.eventbrite.com/e/smart-city-expo-sydney-aus-tickets-1998630772442"
+  "m": "Build your understanding of IP-based live production, including networking, SMPTE ST 2110, PTP, NMOS, and dynamic media facilities.",
+  "u": "https://www.eventbrite.com.au/e/live-ip-essentials-from-networking-to-smpte-st-2110-sydney-tickets-2003866580886"
  },
  {
   "n": "Sydney Tech Week",
