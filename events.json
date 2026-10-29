@@ -47,8 +47,8 @@
   "n": "Startup Tech & AI Networking in Sydney",
   "d": "2026-11-13",
   "t": "6:00 pm",
-  "s": "The Rocks",
-  "v": "Harbour View Hotel, The Rocks",
+  "s": "Surry Hills",
+  "v": "The Winery",
   "c": "Networking",
   "p": null,
   "m": "Dive into tech with other professionals! Network and build strong relationships with investors, tech experts, and entrepreneurs in Sydney.",
@@ -58,8 +58,8 @@
   "n": "AI & Tech Networking Event in Sydney by Ascent Valley",
   "d": "2026-11-13",
   "t": "6:00 pm",
-  "s": "The Rocks",
-  "v": "Harbour View Hotel, The Rocks",
+  "s": "Surry Hills",
+  "v": "The Winery",
   "c": "Networking",
   "p": null,
   "m": "Dive into tech with other professionals! Network and build strong relationships with investors, tech experts, and entrepreneurs in Sydney",
@@ -88,17 +88,6 @@
   "u": "https://www.eventbrite.com/e/ai-tech-startup-night-sydney-tickets-2003799851296"
  },
  {
-  "n": "TechHaus Sydney · Nov 2026: Where Leading AI & Tech Minds Come Together",
-  "d": "2026-11-19",
-  "t": "5:30 pm",
-  "s": "Sydney",
-  "v": "Amazon Web Services Australia Pty. Ltd.",
-  "c": "Networking",
-  "p": null,
-  "m": "Connecting Australia’s leading tech minds for sharp insights, high-energy exchange, and meaningful human-first conversations",
-  "u": "https://www.eventbrite.com.au/e/techhaus-sydney-nov-2026-where-leading-ai-tech-minds-come-together-tickets-1999927112831"
- },
- {
   "n": "Semiconductors and AI: Edge AI",
   "d": "2026-11-26",
   "t": "9:30 am",
@@ -108,6 +97,17 @@
   "p": null,
   "m": "Join us for this morning session looking at semiconductors and Edge AI",
   "u": "https://www.eventbrite.com.au/e/semiconductors-and-ai-edge-ai-tickets-1992538619649"
+ },
+ {
+  "n": "Tea & Tech Cafe",
+  "d": "2026-11-30",
+  "t": "10:00 am",
+  "s": "Randwick",
+  "v": "UNSW Health Translation Hub",
+  "c": "Networking",
+  "p": null,
+  "m": "A relaxed showcase of innovative technologies, designed for older people.",
+  "u": "https://www.eventbrite.com.au/e/tea-tech-cafe-tickets-2003441210592"
  },
  {
   "n": "Live IP Essentials: From Networking to SMPTE ST 2110 Sydney",
