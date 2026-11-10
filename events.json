@@ -1,25 +1,36 @@
 [
  {
-  "n": "Leading Instructional Excellence in Science (North Sydney)",
+  "n": "AI: After Hours",
   "d": "2026-11-10",
-  "t": "9:00 am",
-  "s": "Cammeray",
-  "v": "Norths Cammeray",
-  "c": "Workshop",
-  "p": null,
-  "m": "A professional learning program designed for Heads of Science and Curriculum Leaders.",
-  "u": "https://www.eventbrite.com.au/e/leading-instructional-excellence-in-science-north-sydney-tickets-1999078097403"
- },
- {
-  "n": "Tech Sales Property Brekkie",
-  "d": "2026-11-12",
-  "t": "7:45 am",
-  "s": "Sydney",
-  "v": "LinkedIn Sydney",
+  "t": "5:00 pm",
+  "s": "Kensington",
+  "v": "Michael Crouch Innovation Centre",
   "c": "Networking",
   "p": null,
-  "m": "A casual, in-person breakfast for tech sales professionals to learn about property and property investing.",
-  "u": "https://www.eventbrite.com/e/tech-sales-property-brekkie-registration-2003803467111"
+  "m": "Your weekly meet up and build club for all things AI at UNSW.",
+  "u": "https://www.eventbrite.com.au/e/ai-after-hours-tickets-1978509459052"
+ },
+ {
+  "n": "Engineering the Future: The Entrepreneurship Paradox",
+  "d": "2026-11-10",
+  "t": "5:30 pm",
+  "s": "Darlinghurst",
+  "v": "Australian Museum",
+  "c": "Networking",
+  "p": null,
+  "m": "Australia has the ideas. The talent. The breakthroughs. But are we bold enough to back them?",
+  "u": "https://www.eventbrite.com.au/e/engineering-the-future-the-entrepreneurship-paradox-registration-1996543386013"
+ },
+ {
+  "n": "Oceans of Hope",
+  "d": "2026-11-11",
+  "t": "7:00 pm",
+  "s": "Kensington",
+  "v": "Science Theatre",
+  "c": "Talk",
+  "p": null,
+  "m": "Saving our big blue backyard",
+  "u": "https://www.eventbrite.com.au/e/oceans-of-hope-registration-1995421471336"
  },
  {
   "n": "Garvan Long-Read Research Symposium 2026",
@@ -31,6 +42,17 @@
   "p": null,
   "m": "Join us at the Garvan Long-Read Research Symposium 2026 for a deep dive into groundbreaking discoveries in medical research!",
   "u": "https://www.eventbrite.com.au/e/garvan-long-read-research-symposium-2026-tickets-1994633316945"
+ },
+ {
+  "n": "FRI 13 NOV - WAO SUPERCLUB @ IVY",
+  "d": "2026-11-13",
+  "t": "9:30 pm",
+  "s": "Sydney",
+  "v": "ivy precinct",
+  "c": "Tech",
+  "p": null,
+  "m": "AUSTRALIA'S BIGGEST CLUB BRAND presents SYDNEY’S BIGGEST FRIDAY NIGHT",
+  "u": "https://www.eventbrite.com.au/e/fri-13-nov-wao-superclub-ivy-tickets-2003636518764"
  },
  {
   "n": "Startup Tech & AI Networking in Sydney",
@@ -55,37 +77,59 @@
   "u": "https://www.eventbrite.com/e/ai-tech-networking-event-in-sydney-by-ascent-valley-tickets-1999814664495"
  },
  {
-  "n": "Tech Founders & Investors: Pitch & Connect I Sydney",
-  "d": "2026-11-17",
-  "t": "6:00 pm",
-  "s": "The Rocks",
-  "v": "Harbour View Hotel, The Rocks",
-  "c": "Networking",
-  "p": null,
-  "m": "A curated room for AI and Tech founders, investors, and professionals.",
-  "u": "https://www.eventbrite.com/e/tech-founders-investors-pitch-connect-i-sydney-tickets-2003799989710"
- },
- {
-  "n": "AI Tech & Startup Night — Sydney",
-  "d": "2026-11-17",
-  "t": "6:00 pm",
-  "s": "The Rocks",
-  "v": "Harbour View Hotel, The Rocks",
-  "c": "Networking",
-  "p": null,
-  "m": "Meet Sydney’s AI & Startup founders, investors & builders. Short intros, networking & real connections.",
-  "u": "https://www.eventbrite.com/e/ai-tech-startup-night-sydney-tickets-2003799851296"
- },
- {
-  "n": "TechHaus Sydney · Nov 2026: Where Leading AI & Tech Minds Come Together",
-  "d": "2026-11-19",
-  "t": "5:30 pm",
+  "n": "SAT 14 NOV -  LOL SATURDAYS @ PLAZA HOTEL",
+  "d": "2026-11-14",
+  "t": "9:30 pm",
   "s": "Sydney",
-  "v": "Amazon Web Services Australia Pty. Ltd.",
+  "v": "Plaza Hotel Sydney",
+  "c": "EDM / Electronic",
+  "p": null,
+  "m": "SYDNEY’S NEWEST & BIGGEST SATURDAY NIGHT EXPERIENCE!",
+  "u": "https://www.eventbrite.com.au/e/sat-14-nov-lol-saturdays-plaza-hotel-tickets-2003646601923"
+ },
+ {
+  "n": "GeoRabble Sydney x GIS Day",
+  "d": "2026-11-18",
+  "t": "6:00 pm",
+  "s": "Parramatta",
+  "v": "General Bourke",
   "c": "Networking",
   "p": null,
-  "m": "Sydney's AI and tech networking evening: expert panels, drinks and real connections with tech leaders and engineers.",
-  "u": "https://www.eventbrite.com.au/e/techhaus-sydney-nov-2026-where-leading-ai-tech-minds-come-together-tickets-1999927112831"
+  "m": "GeoRabble is where the geospatial community gathers to share experiences, spark ideas and explore how location shapes our world.",
+  "u": "https://www.eventbrite.com.au/e/georabble-sydney-x-gis-day-tickets-2004181040443"
+ },
+ {
+  "n": "Tech Chat: Safer Online Shopping - Festive Season Edition",
+  "d": "2026-11-20",
+  "t": "1:00 pm",
+  "s": "Hurstville",
+  "v": "Hurstville Library",
+  "c": "Workshop",
+  "p": null,
+  "m": "Shop smarter and safer online this festive season with simple tips to protect yourself.",
+  "u": "https://www.eventbrite.com.au/e/tech-chat-safer-online-shopping-festive-season-edition-tickets-2002678266606"
+ },
+ {
+  "n": "ISACA Sydney Free Member Training - 23rd Nov 2026",
+  "d": "2026-11-23",
+  "t": "8:30 am",
+  "s": "Surry Hills",
+  "v": "Rydges Sydney Central",
+  "c": "Talk",
+  "p": null,
+  "m": "Join ISACA Sydney’s free Training Day on 23 Nov 2026. Learn practical AI Governance skills and earn CPEs with full‑day attendance.",
+  "u": "https://www.eventbrite.com.au/e/isaca-sydney-free-member-training-23rd-nov-2026-tickets-2003689959607"
+ },
+ {
+  "n": "CSE's COMP3110: Machine Learning Engineering Demo Day",
+  "d": "2026-11-23",
+  "t": "9:30 am",
+  "s": "Kensington",
+  "v": "Michael Crouch Innovation Centre",
+  "c": "Talk",
+  "p": null,
+  "m": "CSE's COMP3110 Demo Day showcases the achievements of the inaugural cohort of 27 teams, demonstrating the future of AI Engineering.",
+  "u": "https://www.eventbrite.com.au/e/cses-comp3110-machine-learning-engineering-demo-day-tickets-2004338877538"
  },
  {
   "n": "Material Needs of AI Hardware Industry Roundtable",
@@ -99,6 +143,39 @@
   "u": "https://www.eventbrite.com.au/e/material-needs-of-ai-hardware-industry-roundtable-tickets-2004200632042"
  },
  {
+  "n": "End of Emerge Party",
+  "d": "2026-11-26",
+  "t": "2:00 pm",
+  "s": "Kensington",
+  "v": "Michael Crouch Innovation Centre",
+  "c": "Conference",
+  "p": null,
+  "m": "Join us to celebrate our recent engineering PhD candidates who have submitted their thesis and thinking about what's next!",
+  "u": "https://www.eventbrite.com.au/e/end-of-emerge-party-tickets-2003181643219"
+ },
+ {
+  "n": "FRI 27 NOV - INT GUEST DJ ANIME @ WAO SUPERCLUB",
+  "d": "2026-11-27",
+  "t": "9:30 pm",
+  "s": "Sydney",
+  "v": "ivy precinct",
+  "c": "Tech",
+  "p": null,
+  "m": "AUSTRALIA'S BIGGEST CLUB BRAND presents SYDNEY’S BIGGEST FRIDAY NIGHT",
+  "u": "https://www.eventbrite.com.au/e/fri-27-nov-int-guest-dj-anime-wao-superclub-tickets-2003636969111"
+ },
+ {
+  "n": "RESET X ARQ, 29th November 2026",
+  "d": "2026-11-29",
+  "t": "10:00 pm",
+  "s": "Darlinghurst",
+  "v": "ARQ Sydney",
+  "c": "Other",
+  "p": null,
+  "m": "Sydney's underground house and tech house events.",
+  "u": "https://www.eventbrite.com/e/reset-x-arq-29th-november-2026-tickets-2004342092153"
+ },
+ {
   "n": "Tea & Tech Cafe",
   "d": "2026-11-30",
   "t": "10:00 am",
@@ -110,47 +187,36 @@
   "u": "https://www.eventbrite.com.au/e/tea-tech-cafe-tickets-2003441210592"
  },
  {
-  "n": "Live IP Essentials: From Networking to SMPTE ST 2110 Sydney",
+  "n": "AI Engineering Summit | Sydney | 2026",
+  "d": "2026-12-02",
+  "t": "9:00 am",
+  "s": "Sydney",
+  "v": "Rydges World Square Hotel",
+  "c": "Conference",
+  "p": null,
+  "m": "Explore how engineering teams are building, deploying, and scaling intelligent AI systems from code to production",
+  "u": "https://www.eventbrite.com/e/ai-engineering-summit-sydney-2026-tickets-1995177889777"
+ },
+ {
+  "n": "3D Printing - Holiday Decor & Ornaments Workshop",
   "d": "2026-12-03",
-  "t": "10:00 am",
-  "s": "Sydney",
-  "v": "400 George St",
+  "t": "6:30 pm",
+  "s": "Double Bay",
+  "v": "Woollahra Library at Double Bay",
   "c": "Workshop",
   "p": null,
-  "m": "Build your understanding of IP-based live production, including networking, SMPTE ST 2110, PTP, NMOS, and dynamic media facilities.",
-  "u": "https://www.eventbrite.com.au/e/live-ip-essentials-from-networking-to-smpte-st-2110-sydney-tickets-2003866580886"
+  "m": "Explore designing festive ornaments in this hands on 3D printing workshop.",
+  "u": "https://www.eventbrite.com.au/e/3d-printing-holiday-decor-ornaments-workshop-tickets-2004456904560"
  },
  {
-  "n": "AI and Creativity in Australia: Cognition, Policy, and Practice",
-  "d": "2026-12-11",
-  "t": "10:00 am",
-  "s": "Paddington",
-  "v": "UNSW School of Art & Design",
-  "c": "Workshop",
+  "n": "Talking Tech: ChatGPT for Seniors (for fun)",
+  "d": "2026-12-07",
+  "t": "2:00 pm",
+  "s": "Maroubra",
+  "v": "Lionel Bowen Library",
+  "c": "Talk",
   "p": null,
-  "m": "Join us for an exploration into the crossroads of creative practice and AI.",
-  "u": "https://www.eventbrite.com.au/e/ai-and-creativity-in-australia-cognition-policy-and-practice-tickets-2002108887578"
- },
- {
-  "n": "Sydney Tech Week",
-  "d": "2027-11-08",
-  "t": "9:00 am",
-  "s": "Sydney",
-  "v": "ICC Sydney",
-  "c": "Expo",
-  "p": null,
-  "m": "AUSTRALIA'S LARGEST TECH EVENT. A curated programme of more than 12 fringe events across Sydney. 8-11 November 2027. www.techweek.sydney",
-  "u": "https://www.eventbrite.com.au/e/sydney-tech-week-tickets-1991188594688"
- },
- {
-  "n": "Sydney Tech Expo",
-  "d": "2027-11-09",
-  "t": "9:00 am",
-  "s": "Sydney",
-  "v": "ICC Sydney",
-  "c": "Expo",
-  "p": null,
-  "m": "AUSTRALIA'S LARGEST TECH EVENT. Data Centres ┃ AI ┃ Enterprise Tech. 9-10 November 2027. www.sydneytechexpo.com | www.techweek.sydney",
-  "u": "https://www.eventbrite.com.au/e/sydney-tech-expo-tickets-1990778812017"
+  "m": "We take an inquisitive look at this platform.",
+  "u": "https://www.eventbrite.com.au/e/talking-tech-chatgpt-for-seniors-for-fun-tickets-2004205122473"
  }
 ]
