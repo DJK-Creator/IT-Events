@@ -1,27 +1,5 @@
 [
  {
-  "n": "Startup Tech & AI Networking in Sydney",
-  "d": "2026-11-13",
-  "t": "6:00 pm",
-  "s": "Surry Hills",
-  "v": "The Winery",
-  "c": "Networking",
-  "p": null,
-  "m": "Dive into tech with other professionals! Network and build strong relationships with investors, tech experts, and entrepreneurs in Sydney.",
-  "u": "https://www.eventbrite.com/e/startup-tech-ai-networking-in-sydney-tickets-1999814662489"
- },
- {
-  "n": "AI & Tech Networking Event in Sydney by Ascent Valley",
-  "d": "2026-11-13",
-  "t": "6:00 pm",
-  "s": "Surry Hills",
-  "v": "The Winery",
-  "c": "Networking",
-  "p": null,
-  "m": "Dive into tech with other professionals! Network and build strong relationships with investors, tech experts, and entrepreneurs in Sydney",
-  "u": "https://www.eventbrite.com/e/ai-tech-networking-event-in-sydney-by-ascent-valley-tickets-1999814664495"
- },
- {
   "n": "Tech Founders & Investors: Pitch & Connect I Sydney",
   "d": "2026-11-17",
   "t": "6:00 pm",
@@ -55,15 +33,15 @@
   "u": "https://www.eventbrite.com.au/e/techhaus-sydney-nov-2026-where-leading-ai-tech-minds-come-together-tickets-1999927112831"
  },
  {
-  "n": "Sydney - The new  Leica RTC700 is coming to you!",
-  "d": "2026-11-19",
-  "t": "2:00 pm",
-  "s": "Mascot",
-  "v": "81 Baxter Rd",
-  "c": "High Tech",
+  "n": "CSE's COMP3110: Machine Learning Engineering Demo Day",
+  "d": "2026-11-23",
+  "t": "9:30 am",
+  "s": "Kensington",
+  "v": "Michael Crouch Innovation Centre",
+  "c": "Talk",
   "p": null,
-  "m": "Get ready to check out the awesome new Leica RTC700 up close and personal—don’t miss out on this hands-on experience!",
-  "u": "https://www.eventbrite.com.au/e/sydney-the-new-leica-rtc700-is-coming-to-you-tickets-2003320471458"
+  "m": "CSE's COMP3110 Demo Day showcases the achievements of the inaugural cohort of 27 teams, demonstrating the future of AI Engineering.",
+  "u": "https://www.eventbrite.com.au/e/cses-comp3110-machine-learning-engineering-demo-day-tickets-2004338877538"
  },
  {
   "n": "Material Needs of AI Hardware Industry Roundtable",
@@ -110,6 +88,17 @@
   "u": "https://www.eventbrite.com.au/e/live-ip-essentials-from-networking-to-smpte-st-2110-sydney-tickets-2003866580886"
  },
  {
+  "n": "Inside Tech Sales @ HubSpot",
+  "d": "2026-12-03",
+  "t": "5:00 pm",
+  "s": "Sydney",
+  "v": "HubSpot Sydney",
+  "c": "Workshop",
+  "p": null,
+  "m": "See tech sales from the inside. Real people. Real skills. Real career opportunities.",
+  "u": "https://www.eventbrite.com/e/inside-tech-sales-hubspot-tickets-2002768964887"
+ },
+ {
   "n": "AI and Creativity in Australia: Cognition, Policy, and Practice",
   "d": "2026-12-11",
   "t": "10:00 am",
@@ -121,15 +110,26 @@
   "u": "https://www.eventbrite.com.au/e/ai-and-creativity-in-australia-cognition-policy-and-practice-tickets-2002108887578"
  },
  {
-  "n": "Smart City Expo Sydney, Aus",
-  "d": "2027-04-13",
-  "t": "10:00 am",
-  "s": "Sydney",
-  "v": "Sydney",
-  "c": "Expo",
+  "n": "Startup Tech & AI Networking in Sydney",
+  "d": "2026-12-11",
+  "t": "6:00 pm",
+  "s": "Surry Hills",
+  "v": "The Winery",
+  "c": "Networking",
   "p": null,
-  "m": "Architect the Cognitive City! Join Smart City Expo Sydney 2026 to explore AI, Cyber & Digital Twins with global leaders. #SmartCity #Sydney",
-  "u": "https://www.eventbrite.com/e/smart-city-expo-sydney-aus-tickets-1998630772442"
+  "m": "Dive into tech with other professionals! Network and build strong relationships with investors, tech experts, and entrepreneurs in Sydney.",
+  "u": "https://www.eventbrite.com/e/startup-tech-ai-networking-in-sydney-tickets-2004670025009"
+ },
+ {
+  "n": "AI & Tech Networking Event in Sydney by Ascent Valley",
+  "d": "2026-12-11",
+  "t": "6:00 pm",
+  "s": "Surry Hills",
+  "v": "The Winery",
+  "c": "Networking",
+  "p": null,
+  "m": "Dive into tech with other professionals! Network and build strong relationships with investors, tech experts, and entrepreneurs in Sydney",
+  "u": "https://www.eventbrite.com/e/ai-tech-networking-event-in-sydney-by-ascent-valley-tickets-2004670033033"
  },
  {
   "n": "Sydney Tech Week",
