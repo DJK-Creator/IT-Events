@@ -44,17 +44,6 @@
   "u": "https://www.eventbrite.com.au/e/semiconductors-and-ai-edge-ai-tickets-1992538619649"
  },
  {
-  "n": "Sydney Monthly Social Tech Meetup",
-  "d": "2026-11-26",
-  "t": "5:30 pm",
-  "s": "Newtown",
-  "v": "Mountain Goat Newtown",
-  "c": "Networking",
-  "p": null,
-  "m": "For all techies including students, those in the industry as a developer/engineer/data scientist/AI/anything else, and tech hobbyist.",
-  "u": "https://www.eventbrite.com.au/e/sydney-monthly-social-tech-meetup-tickets-1996322419095"
- },
- {
   "n": "AI for Smart Grids and Renewable Energy Systems Workshop",
   "d": "2026-12-01",
   "t": "1:00 pm",
@@ -75,6 +64,17 @@
   "p": null,
   "m": "A curated room for AI and Tech founders, investors, and professionals.",
   "u": "https://www.eventbrite.com/e/tech-founders-investors-pitch-connect-i-sydney-tickets-2004865059362"
+ },
+ {
+  "n": "AI Tech & Startup Night — Sydney",
+  "d": "2026-12-08",
+  "t": "6:00 pm",
+  "s": "The Rocks",
+  "v": "Harbour View Hotel, The Rocks",
+  "c": "Networking",
+  "p": null,
+  "m": "Meet Sydney’s AI & Startup founders, investors & builders. Short intros, networking & real connections.",
+  "u": "https://www.eventbrite.com/e/ai-tech-startup-night-sydney-tickets-2004859689300"
  },
  {
   "n": "AI VIDEO ‘SUMMIT’",
@@ -99,15 +99,15 @@
   "u": "https://www.eventbrite.com/e/startup-tech-ai-networking-in-sydney-tickets-2004670025009"
  },
  {
-  "n": "AI & Tech Networking Event in Sydney by Ascent Valley",
+  "n": "AI and Creativity in Australia: Cognition, Policy, and Practice",
   "d": "2026-12-11",
-  "t": "6:00 pm",
-  "s": "Surry Hills",
-  "v": "The Winery",
-  "c": "Networking",
+  "t": "10:00 am",
+  "s": "Paddington",
+  "v": "UNSW School of Art & Design",
+  "c": "Workshop",
   "p": null,
-  "m": "Dive into tech with other professionals! Network and build strong relationships with investors, tech experts, and entrepreneurs in Sydney",
-  "u": "https://www.eventbrite.com/e/ai-tech-networking-event-in-sydney-by-ascent-valley-tickets-2004670033033"
+  "m": "Join us for an exploration into the crossroads of creative practice and AI.",
+  "u": "https://www.eventbrite.com.au/e/ai-and-creativity-in-australia-cognition-policy-and-practice-tickets-2002108887578"
  },
  {
   "n": "Smart City Expo Sydney, Aus",
