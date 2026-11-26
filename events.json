@@ -1,25 +1,14 @@
 [
  {
-  "n": "Material Needs of AI Hardware Industry Roundtable",
-  "d": "2026-11-25",
-  "t": "1:30 pm",
-  "s": "Eveleigh",
-  "v": "Cicada Innovations",
-  "c": "Networking",
+  "n": "Watsons Bay Tech Connect Express",
+  "d": "2026-11-27",
+  "t": "2:00 pm",
+  "s": "Watsons Bay",
+  "v": "Watsons Bay Library",
+  "c": "Workshop",
   "p": null,
-  "m": "Join UNSW and S3B for an industry roundtable exploring the materials, hardware and supply chains needed to support the growth of AI.",
-  "u": "https://www.eventbrite.com.au/e/material-needs-of-ai-hardware-industry-roundtable-tickets-2004200632042"
- },
- {
-  "n": "Sydney Monthly Social Tech Meetup",
-  "d": "2026-11-26",
-  "t": "5:30 pm",
-  "s": "Newtown",
-  "v": "Mountain Goat Newtown",
-  "c": "Networking",
-  "p": null,
-  "m": "For all techies including students, those in the industry as a developer/engineer/data scientist/AI/anything else, and tech hobbyist.",
-  "u": "https://www.eventbrite.com.au/e/sydney-monthly-social-tech-meetup-tickets-1996322419095"
+  "m": "Tech Connect is a free, 20 minute, one-on-one tech support service provided by library volunteers for those with limited digital experience.",
+  "u": "https://www.eventbrite.com.au/e/watsons-bay-tech-connect-express-registration-1978202428716"
  },
  {
   "n": "Tea & Tech Cafe",
@@ -141,5 +130,16 @@
   "p": null,
   "m": "AUSTRALIA'S LARGEST TECH EVENT. Data Centres ┃ AI ┃ Enterprise Tech. 9-10 November 2027. www.sydneytechexpo.com | www.techweek.sydney",
   "u": "https://www.eventbrite.com.au/e/sydney-tech-expo-tickets-1990778812017"
+ },
+ {
+  "n": "The Enterprise Tech, Cloud & AI Expo",
+  "d": "2027-11-09",
+  "t": "9:00 am",
+  "s": "Sydney",
+  "v": "ICC Sydney",
+  "c": "Expo",
+  "p": null,
+  "m": "The Enterprise Tech, Cloud & AI Expo ICC Sydney, 9-10 November 2027",
+  "u": "https://www.eventbrite.com.au/e/the-enterprise-tech-cloud-ai-expo-tickets-2002390864980"
  }
 ]
