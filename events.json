@@ -2,13 +2,13 @@
  {
   "n": "Tea & Tech Cafe",
   "d": "2026-11-30",
-  "t": "10:00 am",
+  "t": "1:00 pm",
   "s": "Randwick",
   "v": "UNSW Health Translation Hub",
   "c": "Networking",
   "p": null,
   "m": "A relaxed showcase of innovative technologies, designed for older people.",
-  "u": "https://www.eventbrite.com.au/e/tea-tech-cafe-tickets-2003441210592"
+  "u": "https://www.eventbrite.com.au/e/tea-tech-cafe-tickets-2003441211595"
  },
  {
   "n": "AI for Smart Grids and Renewable Energy Systems Workshop",
@@ -20,6 +20,17 @@
   "p": null,
   "m": "More information is available on: https://dsl-uow.github.io/ai4smartgrids-workshop/",
   "u": "https://www.eventbrite.com/e/ai-for-smart-grids-and-renewable-energy-systems-workshop-tickets-2004093869713"
+ },
+ {
+  "n": "Watsons Bay Tech Connect Express",
+  "d": "2026-12-04",
+  "t": "2:00 pm",
+  "s": "Watsons Bay",
+  "v": "Watsons Bay Library",
+  "c": "Workshop",
+  "p": null,
+  "m": "Tech Connect is a free, 20 minute, one-on-one tech support service provided by library volunteers for those with limited digital experience.",
+  "u": "https://www.eventbrite.com.au/e/watsons-bay-tech-connect-express-registration-1978202431725"
  },
  {
   "n": "Tech Founders & Investors: Pitch & Connect I Sydney",
@@ -53,17 +64,6 @@
   "p": null,
   "m": "AI VIDEO is the biggest thing happening in AI. Meet the Ad Agencies, Media Companies and tech providers taking Australia forward",
   "u": "https://www.eventbrite.com.au/e/ai-video-summit-tickets-2001112811287"
- },
- {
-  "n": "Agile Project Management Masterclass – 1 Day Course | Sydney",
-  "d": "2026-12-08",
-  "t": "9:00 am",
-  "s": "Sydney",
-  "v": "Regus Australia Management Pty Ltd",
-  "c": "Workshop",
-  "p": null,
-  "m": "Master Agile project management to lead adaptive teams, deliver faster, manage change, and achieve successful project outcomes.",
-  "u": "https://www.eventbrite.com/e/agile-project-management-masterclass-1-day-course-sydney-tickets-1998875963816"
  },
  {
   "n": "Startup Tech & AI Networking in Sydney",
